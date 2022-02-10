@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html lang="hu">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Javascript</title>
+        </head>
+        <body>
+            <script>
+                var nev = prompt("Hogy hívnak?")
+                alert("Szia " +nev+"!")
+                var szam = Math.ceil(Math.random() * 100)
+                var szamom = parseInt(prompt("Mondj egy számot egy és száz között!"))
+                while (szamom != szam)
+                {
+                    if(szamom > szam)
+                    {
+                        alert("Túl nagy számot mondtál.");
+                        var szamom = parseInt(prompt("Mondj egy másikat!"))
+                    }
+                    else if(szamom < szam)
+                    {
+                        alert("Túl kis számot mondtál.");
+                        var szamom = parseInt(prompt("Mondj egy másikat!"))
+                    }
+                }
+                if (szamom == szam)
+                {
+                    alert("Eltaláltad")
+                }
+            </script>
+        </body>
+    </html>
